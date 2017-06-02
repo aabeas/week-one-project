@@ -33,15 +33,15 @@ Input Border Bottom: #968772
 Input Border Bottom (Focus): #967343
 */
 
-/*html {
-  max-width: 1200px;
-  min-width: 380px;
-}*/
-
 .site-index {
   background-color: #F2F1E8;
   display: flex;
   flex-direction: column;
+  width: 100%;
+}
+
+.site-about {
+  background-color: #F2F1E8;
   width: 100%;
 }
 
@@ -93,21 +93,61 @@ nav {
   color: #968772;
 }
 
-h1 {
+.company {
   font-family: 'Merriweather', serif;
   font-size: 48px;
   font-weight: 400;
 }
 
-h3 {
+.community {
+  font-family: 'Merriweather', serif;
+  font-size: 48px;
+  font-weight: 400;
+  padding: 20px 0px;
+}
+
+.room {
+  display: inline-flex;
+  font-family: 'Merriweather', serif;
+  font-size: 48px;
+  font-weight: 400;
+  color: white;
+  margin: auto;
+}
+
+h2 {
   font-family: 'Merriweather', serif;
   font-size: 28px;
   font-weight: 100;
+  padding: 10px 0px;
+  margin-top: 5px;
 }
 
-section {
+h3 {
+  font-family: 'Merriweather', serif;
+  font-size: 21px;
+  font-weight: 100;
+  padding: 10px 0px;
+  margin-top: 5px;
+}
+
+p {
+  font-family: 'Merriweather', serif;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 15px 0px;
+}
+
+.site-intro {
   text-align: center;
   margin-top: 80px;
+  height: 590px;
+  width: 100%;
+}
+
+.our-studio {
+  text-align: center;
+  margin-top: 60px;
   height: 1500px;
   width: 100%;
 }
@@ -115,7 +155,7 @@ section {
 .gallery {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: space-between;
   margin: 0;
   width: 100%;
   padding: 10px;
@@ -127,13 +167,32 @@ div {
   align-items: stretch;
 }
 
-.txt_box {
+.txt_box_image {
   font-family: 'Merriweather', serif;
   font-size: 14;
+  font-weight: lighter;
   height: 28px;
-  color: #968772;
+  color: #F2F1E8;
   background-color: #2B2F26;
   padding: 5px 10px;
+}
+
+.txt-box-long {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  text-align: left;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+blockquote {
+  font-family: 'Merriweather', serif;
+  font-size: 16px;
+  font-style: italic;
+  border-left: 2px solid black;
+  padding: 5px 55px;
 }
 
 #i01 {
@@ -191,7 +250,7 @@ div {
 #i06 {
     background-image: url("./images/product-6.jpg");
     background-clip: border-box;
-    background-position: center;
+    background-position: top;
     background-size: cover;
     width: 39%;
     height: auto;
@@ -201,9 +260,52 @@ div {
 #i07 {
     background-image: url("./images/product-7.jpg");
     background-clip: border-box;
-    background-position: center;
+    background-position: left;
     background-size: cover;
     width: 19%;
     height: auto;
     margin: 5px;
+}
+
+#i08 {
+  background-image: url("./images/birdhouse.jpg");
+  background-clip: border-box;
+  background-position: center;
+  background-size: cover;
+  float: left;
+  width: 15%;
+  height: 80px;
+  margin: 0px 25px 0px 0px;
+}
+
+#i09 {
+  background-image: url("./images/background-3.jpg");
+  background-clip: border-box;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+  padding: 0px 50px 0px 0px;
+}
+
+#i10 {
+  background-image: url("./images/background-1.jpg");
+  background-clip: border-box;
+  background-position: center;
+  background-size: cover;
+  float: right;
+  width: 15%;
+  height: 80px;
+  padding: 0px 0px 25px 0px;
+}
+
+footer {
+  background-color: #2B2F26;
+  color: white;
+  font-family: 'Merriweather', serif;
+  font-size: 14;
+  font-weight: lighter;
+  color: #F2F1E8;
+  height: 115px;
+  padding: 40px 20px;
 }
